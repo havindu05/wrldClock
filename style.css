@@ -62,3 +62,26 @@
     bottom: -50px;
     z-index: -1;
 }
+.clock span{
+    font-size: 80px;
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    position: relative;   
+}
+.clock span::after{
+    font-size: 16px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%);
+}
+#hrs::after{
+    content: 'Hours';
+}
+#mint::after{
+    content: 'Minutes';
+}
+#sec::after{
+    content: 'Seconds';
+}
