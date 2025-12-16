@@ -21,7 +21,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50% , -50%);
-    background: goldenrod;
+    background: rgb(0, 0, 0);
 }
 .clock{
     width: 100%;
@@ -39,4 +39,26 @@
     color: #e0fff7;
     text-shadow: 0 0 10px rgba(0, 255, 180, 0.4);
     font-family: 'Orbitron', monospace;
+}
+.container::before{
+    content: '';
+    width: 180px;
+    height: 180px;
+    background: rgba(166, 255, 0, 0.993); 
+    border-radius: 10px;
+    position: absolute;
+    left: -50px;
+    top: -50px;
+    z-index: -1;
+}
+.container::after{
+    content: '';
+    width: 180px;
+    height: 180px;
+    background: rgba(166, 255, 0, 0.993); 
+    border-radius: 10px;
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    z-index: -1;
 }
